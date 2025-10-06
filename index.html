@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Finder</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🎬 Movie Finder</h1>
+    <p class="subtitle">Search for your favorite films</p>
+
+    <div class="search-box">
+      <input type="text" id="movieTag" placeholder="Type film name...">
+      <button onclick="search()">Search</button>
+    </div>
+
+    <div id="movieCard" class="movie-card hidden">
+      <img id="poster" />
+      <div class="movie-info">
+        <h2 id="title"></h2>
+        <p id="plot"></p>
+        <p><strong>Genre:</strong> <span id="tagLine"> </span></p>
+        <p><strong>IMDB Rating:</strong> <span id="rating"> </span></p>
+        <p><strong>Awards:</strong> <span id="Awards"> </span></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
